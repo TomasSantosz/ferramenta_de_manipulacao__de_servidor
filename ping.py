@@ -7,7 +7,6 @@ ip_host = input("Digite o ip ou host a ser verificado: ")
 os.system('ping -n 6 {}'.format(ip_host))
 print("-" * 60)
 
-
 with open('host.txt') as file:
     dump = file.read()
     dump = dump.splitlines()
